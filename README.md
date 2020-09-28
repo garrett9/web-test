@@ -1,6 +1,6 @@
-## Garrett's Wisely Web Test
+# Garrett's Wisely Web Test
 
-# Setup Steps
+## Setup Steps
 
 Unfortunately, the docker image seemed to be very unreliable for me. Instead, to run the application, you can perform the following
 
