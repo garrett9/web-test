@@ -3,7 +3,6 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import CreateInventory from '../views/CreateInventory.vue'
 import CreateRestaurant from '../views/CreateRestaurant.vue'
 import CreateReservation from '../views/CreateReservation.vue'
-import Reservations from '../views/Reservations.vue'
 
 Vue.use(VueRouter)
 

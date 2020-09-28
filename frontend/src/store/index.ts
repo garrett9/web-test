@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+// @ts-ignore: no-explicit-any
 let restaurant: any = null
 
 if (localStorage.restaurant) {

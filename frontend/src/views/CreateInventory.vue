@@ -55,8 +55,6 @@ import AppForm from '../components/AppForm'
 import AppFormGroup from '../components/AppFormGroup'
 import AppSubmit from '../components/AppSubmit'
 
-const MAX_PARTY_SIZE = 10
-
 export default {
   name: 'CreateInventory',
 
