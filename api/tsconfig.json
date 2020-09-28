@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "plugins": [
-      { "name": "typescript-tslint-plugin" }
-    ],
+    "plugins": [{
+      "name": "typescript-tslint-plugin"
+    }],
     "moduleResolution": "node",
     "target": "es6",
     "declaration": true,
@@ -19,6 +19,6 @@
     "types": ["node", "jest"],
     "outDir": "./dist"
   },
-  "exclude": ["node_modules"],
-    "include": ["./src"],
+  "exclude": ["node_modules", "./dist"],
+  "include": ["./src", "./tests"],
 }
