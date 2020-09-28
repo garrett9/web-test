@@ -2,7 +2,7 @@
   "name": "@wisely/test",
   "version": "1.0.0",
   "scripts": {
-    "dev": "yarn tsc-watch --onSuccess \"yarn node ./dist/index.js\"",
+    "dev": "yarn tsc-watch --onSuccess \"yarn node ./dist/src/index.js\"",
     "test": "yarn jest ./tests/*.test.ts --runInBand",
     "build": "rm -rf dist && yarn tsc",
     "start": "node ./dist/start.js"
