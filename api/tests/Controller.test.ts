@@ -179,7 +179,7 @@ describe('ControllerTest', () => {
           name: 'Bob',
           email: 'bob@gmail.com',
           size: 3,
-          date: moment().set('hour', 5).set('minute', 2).toDate(),
+          date: moment().set('hour', 8).set('minute', 2),
         })
         .expect('Content-Type', /json/)
         .expect(200)
@@ -187,7 +187,7 @@ describe('ControllerTest', () => {
       expect(response.body.name).toBe('Bob')
       expect(response.body.email).toBe('bob@gmail.com')
       expect(response.body.size).toBe(3)
-      expect(moment(response.body.date).hours()).toBe(5)
+      expect(moment(response.body.date).hours()).toBe(8)
       expect(moment(response.body.date).minutes()).toBe(15)
       expect(response.body.inventoryId).toBe(inventoryId)
 
@@ -223,7 +223,7 @@ describe('ControllerTest', () => {
 
     it('should return the new reservation with the associated inventory', async done => {
       const response = await request
-        .get(`/restaurants/${restaurantId}/inventory`)
+        .get(`/restaurants/${restaurantId}/inventory?date=${moment().format('MM/DD/YYYY')}`)
         .expect('Content-Type', /json/)
         .expect(200)
       expect(response.body.length).toBeGreaterThan(0)
